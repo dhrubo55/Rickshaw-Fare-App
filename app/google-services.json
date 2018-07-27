@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "22625602828",
+    "firebase_url": "https://bashundhararickshaw.firebaseio.com",
+    "project_id": "bashundhararickshaw",
+    "storage_bucket": "bashundhararickshaw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22625602828:android:1e98507b8e642c4a",
+        "android_client_info": {
+          "package_name": "com.example.dhruboandroid.bashundhara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22625602828-vu4t5btkufqugekb2v4celhtr7rcatbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dhruboandroid.bashundhara",
+            "certificate_hash": "87835202b0f2c2822d0039d4f38aadf8e7c32bab"
+          }
+        },
+        {
+          "client_id": "22625602828-5fo9b1ngk3v7un2aoos9aqibnofurbra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB4cazNTnO_Hj_Phh8a4ZhAsPXl9R52CI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22625602828-5fo9b1ngk3v7un2aoos9aqibnofurbra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22625602828:android:56bb10a51574a5f3",
+        "android_client_info": {
+          "package_name": "com.example.dhruboandroid.bashundhararickshaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22625602828-ohp0i7co348i96fo3srquub1vudef1pl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dhruboandroid.bashundhararickshaw",
+            "certificate_hash": "87835202b0f2c2822d0039d4f38aadf8e7c32bab"
+          }
+        },
+        {
+          "client_id": "22625602828-5fo9b1ngk3v7un2aoos9aqibnofurbra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB4cazNTnO_Hj_Phh8a4ZhAsPXl9R52CI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22625602828-5fo9b1ngk3v7un2aoos9aqibnofurbra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
