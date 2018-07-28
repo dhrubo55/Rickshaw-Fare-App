@@ -29,8 +29,7 @@ INSERT INTO `Place` (id,place,lat,long) VALUES (0,'','',''),
  (19,'hurdco school','23.8119918','90.4233357'),
  (20,'g block ','23.8259589','90.4346915'),
  (21,'vns','23.7266278','90.3819964'),
- (22,'biswo road','23.8214601','90.4188672'),
-
+ (22,'biswo road','23.8214601','90.4188672');
 CREATE TABLE IF NOT EXISTS `Fare` (
 	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	`source`	TEXT NOT NULL,

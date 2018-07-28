@@ -3,6 +3,7 @@ package com.example.dhruboandroid.bashundhara;
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.ValueAnimator;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -14,8 +15,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -132,6 +137,13 @@ public class MainActivity extends AppCompatActivity {
     private List<LatLng> listLatLng = new ArrayList<>();
     private Polyline blackPolyLine, greyPolyLine;
 
+
+  //  private RelativeLayout relativeLayout;
+
+
+    private LinearLayout relativeLayout;
+
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,6 +158,9 @@ public class MainActivity extends AppCompatActivity {
         fare_amount = findViewById(R.id.show_fare);
         fare_button = findViewById(R.id.button_fare);
 
+//        relativeLayout = findViewById(R.id.linear);
+//        relativeLayout.setAlpha(0.4f);
+
         signoutButton = findViewById(R.id.button_signout);
 
         mapView = findViewById(R.id.mapView);
@@ -158,10 +173,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                final String f = from.getText().toString();
-                final String t = to.getText().toString();
+                final String f = from.getText().toString().toLowerCase();
+                final String t = to.getText().toString().toLowerCase();
                 Log.e(TAG, f + " " + t);
                 fare_amount.setText("Fare is " + db.getNotesCount(f, t) + "Tk");
+                to.setImeActionLabel(EditorInfo.IME_ACTION_DONE);
+
+
 
 
                 mapView.onCreate(savedInstanceState);
@@ -532,5 +550,5 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
-
 }
+
