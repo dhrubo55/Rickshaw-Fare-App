@@ -39,7 +39,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // Database creation scripts should be placed in assets/sql
-        String createDbFile = "bashundharaRouteFare.db"+ ".sql";
+        String createDbFile = "bashundharaRouteFareNew.db"+ ".sql";
         Log.v(TAG, "Creating new database from " + createDbFile + ".");
 
         AssetManager am = mContext.getAssets();

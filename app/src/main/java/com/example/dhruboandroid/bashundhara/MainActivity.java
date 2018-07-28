@@ -168,6 +168,22 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        to.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fare_button.setVisibility(View.VISIBLE);
+            }
+        });
+
+        from.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fare_button.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+
         //Log.e(TAG, db.getNotesCount("VNS","IUB"));
         fare_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -177,7 +193,12 @@ public class MainActivity extends AppCompatActivity {
                 final String t = to.getText().toString().toLowerCase();
                 Log.e(TAG, f + " " + t);
                 fare_amount.setText("Fare is " + db.getNotesCount(f, t) + "Tk");
-                to.setImeActionLabel(EditorInfo.IME_ACTION_DONE);
+
+
+                InputMethodManager inputMgr = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                EditText editText = (EditText)findViewById(R.id.to);
+                inputMgr.hideSoftInputFromWindow(editText.getWindowToken(), 0);
+
 
 
 
@@ -223,6 +244,10 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+
+
+
+                fare_button.setVisibility(View.INVISIBLE);
             }
         });
 
